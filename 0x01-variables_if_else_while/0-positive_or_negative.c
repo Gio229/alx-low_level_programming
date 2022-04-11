@@ -7,7 +7,8 @@
  *
  * Return: 0 at the end
  */
-int main(void){
+int main(void)
+{
 	int n;
 
 	srand(time(0));
