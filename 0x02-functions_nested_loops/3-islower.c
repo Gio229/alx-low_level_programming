@@ -5,7 +5,7 @@
  *
  * Return: 1 if true 0 else
  */
-void _islower(int c)
+int _islower(int c)
 {
 
 	if (c == 'c')
