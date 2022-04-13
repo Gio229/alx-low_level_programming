@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * _islower - check if is lower
+ * _islower - check if is lower.
  *
- * Return: 1 if true 0 else
+ *@c: to be checked.
+ *
+ * Return: 1 if true 0 else.
  */
 int _islower(int c)
 {
