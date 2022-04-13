@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_sign - print the sing
+ *_abs - absolute value
  *
  *@n: to be checked.
  *
