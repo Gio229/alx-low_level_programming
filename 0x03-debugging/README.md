@@ -1,1 +1,1 @@
-debugging
+Learning how to debug a code
