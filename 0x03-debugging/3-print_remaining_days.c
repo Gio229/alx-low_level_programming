@@ -5,8 +5,11 @@
  * print_remaining_days - print how many days are in a date
  *
  * @month: month
+ *
  * @day: day
+ *
  * @year: year
+ *
  * Return: void
  */
 void print_remaining_days(int month, int day, int year)
