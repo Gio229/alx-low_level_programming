@@ -1,9 +1,9 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - entry point
  *
- * Return: void
+ * Return: 0
  */
 
 int main(void)
@@ -29,9 +29,9 @@ int main(void)
 			printf("%d", i);
 		}
 		if (i != 100)
-			_putchar(' ');
+			putchar(' ');
 		else
-			_putchar('\n');
+			putchar('\n');
 	}
 	return (0);
 }
