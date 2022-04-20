@@ -10,19 +10,22 @@
 void rev_string(char *s)
 {
 	char tmp;
-	int i, j, size, middleSize = 0;
+	int i, start, end, size, middleSize = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 		size++;
 	middleSize = (size / 2);
+	start = 0;
+	end = (size > 0) ? (size - 1) : 0;
 	for (i = 0; i <= middleSize; i++)
 	{
-		for (j = (size - (1 + i)); j >= middleSize; j--)
-		{
-			tmp = s[i];
-			s[i] = s[j];
-			s[j] = tmp;
+		if (start == end)
 			break;
-		}
+		tmp = s[start];
+		s[start] = s[end];
+		s[end] = tmp;
+
+		start++;
+		end--;
 	}
 }
