@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen
+ * _strlen - print string length
  *
  * @s: string
  *
@@ -15,5 +15,5 @@ int _strlen(char *s)
 	{
 		size++;
 	}
-	return size;
+	return (size);
 }
