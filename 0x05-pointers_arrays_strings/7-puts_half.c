@@ -13,7 +13,7 @@ void puts_half(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 		size++;
-	middleSize = (size % 2 == 1) ? ((size - 1) / 2) : (size / 2);
+	middleSize = (size % 2 == 1) ? ((size + 1) / 2) : (size / 2);
 
 	for (i = middleSize; i < size; i++)
 	{
