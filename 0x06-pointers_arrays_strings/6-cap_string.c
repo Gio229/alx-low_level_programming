@@ -13,6 +13,8 @@ char *cap_string(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		if (str[i] == '\t')
+			str[i] = ' ';
 		if (str[i] == ' ' || str[i] == '.' || str[i] == '\n'|| str[i] == '\t' || str[i] == ',' || str[i] == ';' || str[i] == '!' || str[i] == '?' || str[i] == '"' || str[i] == '(' || str[i] == ')' || str[i] == '{' || str[i] == '}')
 		{
 			if (str[i + 1] <= 122 && str[i + 1] >= 97)
