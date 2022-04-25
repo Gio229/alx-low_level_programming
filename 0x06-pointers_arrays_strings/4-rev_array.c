@@ -12,9 +12,6 @@ void reverse_array(int *a, int n)
 {
 	int i, start, end, middleSize, tmp;
 
-	for (i = 0; a[i] != '\0'; i++)
-		n++;
-
 	middleSize = (n / 2);
 	start = 0;
 	end = (n > 0) ? (n - 1) : 0;
