@@ -20,11 +20,11 @@ int _strcmp(char *s1, char *s2)
 
 	size = (size1 >= size2) ? size1 : size2;
 
-	for (i = 0; i < 6; i++)
+	for (i = 0; i < size; i++)
 	{
 		cmp = s1[i] - s2[i];
 		if (cmp != 0)
-			return cmp;
+			return (cmp);
 	}
 
 	return (cmp);
