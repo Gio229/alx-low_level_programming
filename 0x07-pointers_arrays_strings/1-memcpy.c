@@ -5,7 +5,7 @@
  *
  * @dest: destination
  * @src: source
- * @n: bytes from memory 
+ * @n: bytes from memory
  *
  * Return: @dest
  */
