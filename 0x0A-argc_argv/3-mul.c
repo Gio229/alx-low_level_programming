@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - prints the number of arguments passed into the program
@@ -10,8 +11,6 @@
  */
 int main(int argc, char **argv)
 {
-	(void)argc;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
