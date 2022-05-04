@@ -8,11 +8,11 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *arr = malloc(size);
+	char *a = malloc(size);
 
-	if (size == 0 || arr == NULL)
+	if (size == 0 || a == NULL)
 		return (NULL);
 	while (size--)
-		arr[size] = c;
-	return (arr);
+		a[size] = c;
+	return (a);
 }
