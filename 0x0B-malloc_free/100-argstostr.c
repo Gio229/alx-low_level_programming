@@ -33,7 +33,7 @@ char *argstostr(int ac, char **av)
 	for (i = 0; i < ac; i++)
 		concat_size += _strlen(av[i]);
 
-	concat = malloc(sizeof(char) * concat_size + );
+	concat = malloc(sizeof(char) * concat_size + 1);
 	if (concat == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
