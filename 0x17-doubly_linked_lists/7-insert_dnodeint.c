@@ -49,10 +49,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current = current->next;
 	}
 
-	if (counter <= idx || counter > idx)
-	{
-		free(new);
-		return (NULL);
-	}
 	return (new);
 }
