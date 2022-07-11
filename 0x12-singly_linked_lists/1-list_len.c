@@ -12,9 +12,9 @@ size_t list_len(const list_t *h)
 	int number = 0;
 	list_t *current;
 
-	for(current = h; current != NULL; current = current->next)
+	for (current = h; current != NULL; current = current->next)
 	{
 		number += 1;
 	}
-	return number;
+	return (number);
 }
