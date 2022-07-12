@@ -31,9 +31,9 @@ int *array_range(int min, int max)
 	if (array == NULL)
 		return (NULL);
 
-	for (i = 0; mi <= ma; i++)
+	for (i = 0; mi + i <= ma; i++)
 	{
-		array[i] = mi++;
+		array[i] = mi + i;
 	}
 
 	return (array);
