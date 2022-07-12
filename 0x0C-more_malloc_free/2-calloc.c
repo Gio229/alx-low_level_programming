@@ -12,13 +12,15 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *table;
+	unsigned int gSize = nmenb * size;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	table = malloc(nmemb * size);
+	table = malloc(gSize);
 
 	if (table == NULL)
 		return (NULL);
-
+	for (i = 0; i < gsize; i++)
+		table[i] = 0;
 	return (table);
 }
