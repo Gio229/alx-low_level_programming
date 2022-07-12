@@ -12,7 +12,8 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *table;
-	unsigned int gSize = nmenb * size;
+	char *current;
+	unsigned int i, gSize = nmemb * size;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
@@ -20,7 +21,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (table == NULL)
 		return (NULL);
-	for (i = 0; i < gsize; i++)
-		table[i] = 0;
+	current = table;
+	for (i = 0; i < gSize; i++)
+		current[i] = 0;
 	return (table);
 }
