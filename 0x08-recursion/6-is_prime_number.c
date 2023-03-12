@@ -10,17 +10,14 @@
 int is_prime_number(int n)
 {
 	int result;
-	int positive_init;
 
 	if (n < 0)
-		positive_init = (n * (-1));
-	else
-		positive_init = n;
-
-	if (positive_init == 1 || positive_init == 0)
 		return (0);
 
-	result = prime_number(positive_init, positive_init - 1);
+	if (n == 1 || n == 0)
+		return (0);
+
+	result = prime_number(n, n - 1);
 
 	return (result);
 }
