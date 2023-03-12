@@ -15,5 +15,6 @@ int wildcmp(char *s1, char *s2);
 int prime_number(int n, int divider);
 int str_len(char *s);
 int palindrome(char *s, int startIndex, int endIndex);
+int sqr(int n, int init);
 
 #endif /* _MAIN_H_ */
