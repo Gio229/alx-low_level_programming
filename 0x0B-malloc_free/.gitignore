@@ -1,2 +1,4 @@
 #NOT TO COMMIT
-
+*-main.c
+*.o
+commit.bash
