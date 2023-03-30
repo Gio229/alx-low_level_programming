@@ -18,9 +18,35 @@ int example_variadic_function(int a, double b, ...);
 To allow this we use the variable arguments macros defined in the <mark>stdarg.h</mark> standard header.
 
 ### How to use va_start, va_arg and va_end macros
+```c
+int sum_them_all(const unsigned int n, ...)
+{
+	unsigned int sum = 0, i;
+	va_list arguments;
+
+	if (n == 0)
+		return (sum);
+
+	va_start(arguments, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(arguments, unsigned int);
+
+	va_end(arguments);
+
+	return (sum);
+}
+```
+This function above is going is a variadic function. It aim to sum arguments passed to. `n` in this case represente the number of arguments.
+
+We setup the arguments with `va_list` and then start to map them whit `va_start`. `va_start` take the arguments setup with va_list and then the variable after which it map those arguments. 
+
+`va_arg` tel us to switch to the next argument of a specified type.
+
+`va_end` close the process.
 
 ### Why and how to use the const type qualifier
-We use the <mark>const</mark> type qualifier when we want to make a variable constant and don't want to reasigned his value.
+We use the `const` type qualifier when we want to make a variable constant and don't want to reasigned his value.
 An declaration example is:
 ```c
 const char my_constant = 'G';
