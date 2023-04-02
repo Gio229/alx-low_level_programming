@@ -2,7 +2,8 @@
 
 /**
  * main - performs simple calculate operations.
- *
+ *	@argc: arguments number
+ *	@argv: arguments vector
  * Return: Always 0.
  */
 int main(int argc, char **argv)
