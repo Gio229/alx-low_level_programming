@@ -13,7 +13,7 @@ int main(int argc, char **argv)
 
 	if (argc < 4 || argc > 4)
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(98);
 	}
 
@@ -25,7 +25,7 @@ int main(int argc, char **argv)
 	{
 		if (num2 == 0)
 		{
-			printf("Error");
+			printf("Error\n");
 			exit(100);
 		}
 	}
